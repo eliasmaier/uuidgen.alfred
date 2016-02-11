@@ -62,6 +62,14 @@
 				<key>modifiersubtext</key>
 				<string>UUID to clipboard (no pasting)</string>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D0DD40B9-1E14-48D7-B952-BD11391ABA06</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>lower case</string>
+			</dict>
 		</array>
 		<key>83B6FD02-EC5D-4893-9330-7AB4CC6A766F</key>
 		<array>
@@ -112,6 +120,36 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>D0DD40B9-1E14-48D7-B952-BD11391ABA06</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F47FBF78-6199-408C-B318-05CCB13D659F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B7FA9283-6686-4A49-BDB8-E4118B513949</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D14F75E9-8D45-4F29-941F-2540397FA4A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D0DD40B9-1E14-48D7-B952-BD11391ABA06</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>F62C56FD-989B-48AA-A14B-4145C316F6B1</key>
 		<array>
 			<dict>
@@ -134,6 +172,42 @@
 	<string>UUIDGen</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>uuid</string>
+				<key>subtext</key>
+				<string>Paste new UUID at cursor</string>
+				<key>text</key>
+				<string>uuidgen</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>23FECE94-BD2A-4925-96B0-D153DCE85B41</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F47FBF78-6199-408C-B318-05CCB13D659F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -183,15 +257,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
 				<string>{query}</string>
+				<key>title</key>
+				<string>Created UUID</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>F47FBF78-6199-408C-B318-05CCB13D659F</string>
+			<string>B7FA9283-6686-4A49-BDB8-E4118B513949</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -240,52 +324,6 @@
 			<string>F62C56FD-989B-48AA-A14B-4145C316F6B1</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Created UUID</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>B7FA9283-6686-4A49-BDB8-E4118B513949</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>uuid</string>
-				<key>subtext</key>
-				<string>Paste new UUID at cursor</string>
-				<key>text</key>
-				<string>uuidgen</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>23FECE94-BD2A-4925-96B0-D153DCE85B41</string>
-			<key>version</key>
-			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -348,6 +386,50 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>D14F75E9-8D45-4F29-941F-2540397FA4A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>uuidgen | awk '{print tolower($0)}'</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D0DD40B9-1E14-48D7-B952-BD11391ABA06</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -366,12 +448,12 @@
 		<key>23FECE94-BD2A-4925-96B0-D153DCE85B41</key>
 		<dict>
 			<key>ypos</key>
-			<real>240</real>
+			<real>10</real>
 		</dict>
 		<key>83B6FD02-EC5D-4893-9330-7AB4CC6A766F</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>90</real>
 		</dict>
 		<key>842D97E1-7350-4457-9A6D-C013F1968C20</key>
 		<dict>
@@ -381,27 +463,37 @@
 		<key>B7FA9283-6686-4A49-BDB8-E4118B513949</key>
 		<dict>
 			<key>ypos</key>
-			<real>140</real>
+			<real>210</real>
 		</dict>
 		<key>B97FAB9C-C2B0-4B17-A034-FCC32CE4E43B</key>
 		<dict>
 			<key>ypos</key>
-			<real>140</real>
+			<real>210</real>
 		</dict>
 		<key>C54681E9-F282-400D-A43E-7819FD9EF3D9</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>90</real>
+		</dict>
+		<key>D0DD40B9-1E14-48D7-B952-BD11391ABA06</key>
+		<dict>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
+		<key>D14F75E9-8D45-4F29-941F-2540397FA4A0</key>
+		<dict>
+			<key>ypos</key>
+			<real>450</real>
 		</dict>
 		<key>F47FBF78-6199-408C-B318-05CCB13D659F</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>90</real>
 		</dict>
 		<key>F62C56FD-989B-48AA-A14B-4145C316F6B1</key>
 		<dict>
 			<key>ypos</key>
-			<real>140</real>
+			<real>210</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
