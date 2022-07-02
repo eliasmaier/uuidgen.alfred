@@ -31,3 +31,6 @@ Desktop DB
 # SVN and CVS
 .cvs/
 .svn/
+
+# IDEA
+.idea/

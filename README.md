@@ -4,6 +4,9 @@ Simple Alfred Workflow to generate UUIDs.
 
 ![Screenshot][screen1]
 
+>Works with macOS 12.4 and above Work with later versions requires the use of python3
+Simple Alfred Workflow to generate UUIDs.
+> 
 ## Usage
 
 Place new UUID at Cursor:
